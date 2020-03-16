@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/cardview_dark_background"
+        >
+
+
+
+        <com.example.movinganimation.ArcLayout
+            android:id="@+id/diagonalLayout"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:elevation="10dip"
+            app:arc_cropDirection="cropOutside"
+            app:arc_position="bottom"
+            app:arc_height="50dp"
+            >
+
+            <com.flaviofaria.kenburnsview.KenBurnsView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/saves"
+                />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--<ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="30dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/jss" />-->
+
+            </FrameLayout>
+
+        </com.example.movinganimation.ArcLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/diagonalLayout"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:padding="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:text="Story"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/arclayout_description"
+                android:textColor="#979696"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:text="Development"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:id="@+id/button"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="119dp"
+                android:background="@drawable/typeo"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:text="THEME SEARCH" />
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/button2"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="119dp"
+                android:background="@drawable/typeu"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:text="VIDEOS" />
+
+            <Button
+                android:id="@+id/button3"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="119dp"
+                android:background="@drawable/images"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:text="Need an Answer?" />
+            <!--  <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="18dp"
+                  android:fontFamily="sans-serif"
+                  android:text="@string/arclayout_development"
+                  android:textColor="#979696"
+                  android:textSize="15sp"
+                  />-->
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

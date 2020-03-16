@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">videoyt</string>
+    <string name="arclayout_description">A church building or church house, often simply called a church, is a building used for Christian religious activities, particularly for Christian worship services. ... The earliest identified Christian church building was a house church founded between 233 and 256.</string>
+    <string name="arclayout_development">In February 2013, The Walt Disney Company CEO Bob Iger confirmed the development of two stand-alone films, each individually written by Lawrence Kasdan and Simon Kinberg. On February 6, Entertainment Weekly reported that Lucasfilm is working on two films featuring Han Solo and Boba Fett. Disney CFO Jay Rasulo has described the stand-alone films as origin stories. Kathleen Kennedy explained that the stand-alone films will not crossover with the films of the sequel trilogy…</string>
+    <string name="search">Search</string>
+    <string name="failed">Failed to initialize Youtube Player</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

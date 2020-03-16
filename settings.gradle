@@ -1,0 +1,2 @@
+include ':app', ':movinganimation'
+rootProject.name='videoyt'

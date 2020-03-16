@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.example.videoyt"
+        minSdkVersion 24
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    configurations.all {
+        resolutionStrategy.force 'com.google.code.findbugs:jsr305:3.0.1'
+    }
+}
+
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+    implementation 'com.flaviofaria:kenburnsview:1.0.7'
+    implementation project(':movinganimation')
+
+
+    //dependency for RecyclerView
+    implementation 'com.android.support:recyclerview-v7:28.3.1'
+
+    //dependency for CardView
+    implementation 'com.android.support:cardview-v7:28.3.1'
+
+    //Picasso library dependency
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+
+    implementation 'com.squareup.okhttp:okhttp:2.3.0'
+    implementation 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    //for image show
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    //google client for android api dependency
+    //excluding org.apache.httpcomponents so as to resolve anonymity
+    implementation('com.google.api-client:google-api-client-android:1.23.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+
+    //youtube data api v3 dependency
+    //excluding org.apache.httpcomponents so as to resolve anonymity
+    implementation('com.google.apis:google-api-services-youtube:v3-rev192-1.23.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+
+    implementation 'com.squareup.okhttp:okhttp:2.3.0'
+    implementation 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+
+    implementation files('libs/gson-2.1.jar')
+
+    //dependency for finding bugs
+    //YouTubeAndroidPlayerApi for playing youtube videos
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+}
