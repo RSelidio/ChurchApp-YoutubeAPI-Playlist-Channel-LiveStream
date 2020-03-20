@@ -41,7 +41,7 @@ public class YoutubeConnector {
     //Developer API key a developer can obtain after creating a new project in google developer console
     //Developer has to enable YouTube Data API v3 in the project
     //Add credentials and then provide the Application's package name and SHA fingerprint
-    public static final String KEY = "AIzaSyCfaSA_Xv3LtrF5ksTcvyYzkYQg2bylm5M";
+    public static final String KEY = "[API KEY HERE]";
 
     //Package name of the app that will call the YouTube Data API
     public static final String PACKAGENAME = "com.example.videoyt";
@@ -52,7 +52,7 @@ public class YoutubeConnector {
     //maximum results that should be downloaded via the YouTube data API at a time
     private static final long MAXRESULTS = 15;
 
-    private static String GOOGLE_YOUTUBE_API_KEY = "AIzaSyCfaSA_Xv3LtrF5ksTcvyYzkYQg2bylm5M";//here you should use your api key for testing purpose you can use this api also
+    private static String GOOGLE_YOUTUBE_API_KEY = "[API KEY HERE]";//here you should use your api key for testing purpose you can use this api also
     private static String CHANNEL_ID = "UCO4x2pyUWZcnOSHlHqcnN-w"; //here you should use your channel id for testing purpose you can use this ID also
     private static String CHANNEL_GET_URL = "https://www.googleapis.com/youtube/v3/search?part=snippet&order=date&channelId=" + CHANNEL_ID + "&maxResults=20&key=" + GOOGLE_YOUTUBE_API_KEY + "";
 
