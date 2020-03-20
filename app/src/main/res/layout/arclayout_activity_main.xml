@@ -127,7 +127,7 @@
                 android:background="@drawable/images"
                 android:textSize="25sp"
                 android:textStyle="bold"
-                android:text="Need an Answer?" />
+                android:text="Live Stream" />
             <!--  <TextView
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
@@ -137,6 +137,17 @@
                   android:textColor="#979696"
                   android:textSize="15sp"
                   />-->
+
+            <Button
+                android:id="@+id/button4"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="119dp"
+                android:background="@drawable/imagesquestion"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:text="Questions?" />
 
         </LinearLayout>
 

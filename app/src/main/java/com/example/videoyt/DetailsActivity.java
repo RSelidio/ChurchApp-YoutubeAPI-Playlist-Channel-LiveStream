@@ -42,7 +42,7 @@ import com.example.videoyt.models.YoutubeDataModel;
 
 public class DetailsActivity extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
     private static final int READ_STORAGE_PERMISSION_REQUEST_CODE = 1;
-    private static String GOOGLE_YOUTUBE_API = "AIzaSyDqOUfpinUOFW2J9zpYvOJv_4fOZ-ZkSvk";//here you should use your api key for testing purpose you can use this api also
+    private static String GOOGLE_YOUTUBE_API = "AIzaSyCfaSA_Xv3LtrF5ksTcvyYzkYQg2bylm5M";//here you should use your api key for testing purpose you can use this api also
     private YoutubeDataModel youtubeDataModel = null;
     TextView textViewName;
     TextView textViewDes;

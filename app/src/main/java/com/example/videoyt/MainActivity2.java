@@ -20,6 +20,8 @@ public class MainActivity2 extends AppCompatActivity {
         Button btn = (Button)findViewById(R.id.button);
         Button btn2 = (Button)findViewById(R.id.button2);
         Button btn3 = (Button)findViewById(R.id.button3);
+        Button btn4 = (Button)findViewById(R.id.button4);
+
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,10 +39,16 @@ public class MainActivity2 extends AppCompatActivity {
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity2.this, WebView.class));
+                startActivity(new Intent(MainActivity2.this, LiveStream.class));
             }
         });
 
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity2.this, WebView.class));
+            }
+        });
 
     }
 

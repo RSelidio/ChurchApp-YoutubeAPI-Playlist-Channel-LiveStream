@@ -147,6 +147,8 @@ public class YoutubeAdapter extends RecyclerView.Adapter<YoutubeAdapter.MyViewHo
     //here the dataset is mVideoList
     @Override
     public int getItemCount() {
-        return mVideoList.size();
+       /* return mVideoList.size();*/
+
+        return null!=mVideoList?mVideoList.size():0;
     }
 }

@@ -37,7 +37,7 @@ import com.example.videoyt.models.YoutubeDataModel;
  */
 public class ChannelFragment extends Fragment {
 
-    private static String GOOGLE_YOUTUBE_API_KEY = "AIzaSyDqOUfpinUOFW2J9zpYvOJv_4fOZ-ZkSvk";//here you should use your api key for testing purpose you can use this api also
+    private static String GOOGLE_YOUTUBE_API_KEY = "AIzaSyCfaSA_Xv3LtrF5ksTcvyYzkYQg2bylm5M";//here you should use your api key for testing purpose you can use this api also
     private static String CHANNEL_ID = "UCO4x2pyUWZcnOSHlHqcnN-w"; //here you should use your channel id for testing purpose you can use this ID also
     private static String CHANNLE_GET_URL = "https://www.googleapis.com/youtube/v3/search?part=snippet&order=date&channelId=" + CHANNEL_ID + "&maxResults=20&key=" + GOOGLE_YOUTUBE_API_KEY + "";
 
